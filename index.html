@@ -1,0 +1,333 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquer The Suffering (Rubin x Art Grant Inquiry)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+      }
+      header {
+        width: 100%;
+        height: auto;
+      }
+      h1, h3 {
+        font-family: 'Exo 2', sans-serif;
+      }
+      p {
+        font-family: 'Cormorant Garamond', serif;
+      }
+
+      .section {
+        padding: 60px;
+        color: #fff;
+      }
+      @media (max-width: 640px) {
+          .section {
+              padding: 30px;
+          }
+      }
+
+      .red { background-color: #e74c3c; }
+      .green { background-color: #27ae60; }
+      .yellow { background-color: #f1c40f; }
+      .blue { background-color: #3498db; }
+
+    .header-image {
+      height: 100vh;
+      background: url('NangqenTsenpo.png') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Exo 2";
+      color: white;
+    }
+    .header-image h2 {
+        font-family: 'Cormorant Garamond';
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    .header-text {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+        padding: 3rem;
+    }
+    .header-button {
+        margin: 2rem;
+        width: 80px;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #ffffff11;
+        transition: 0.2s ease;
+        user-select: none;
+    }
+    .header-button:hover {
+        background-color: #ffffff44;
+        cursor: pointer;
+    }
+    @media (max-width: 500px) {
+        .header-image h2 {
+            padding-bottom: 0rem;
+        }
+    }
+
+    .description p {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 500px) {
+        .description p { font-size: 1.15rem; }
+    }
+
+    .technologies-container {
+        display: flex;             /* Place items in a horizontal row by default */
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    @media (max-width: 1000px) {
+        .technologies-container {
+            flex-direction: column;
+            align-items: center;      /* Center items when stacked vertically */
+        }
+    }
+    .technology-item {
+        flex: 1;
+        margin: 10px;
+        padding: 20px 30px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        text-align: center;
+    }
+    .technology-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    .technology-item img {
+        filter: invert(100%);
+        object-fit: cover;
+    }
+    .technology h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .technology p {
+        font-size: 1.1rem;
+    }
+      .video-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* 2 columns, 2 rows by default */
+          gap: 2rem;                      /* Spacing between blocks */
+          max-width: 1200px;             /* Optional: limit total width */
+          margin: 2rem auto;             /* Center the grid and add top/bottom spacing */
+          padding: 0 1rem;               /* Small horizontal padding */
+      }
+      .preview-video {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding-right: 40px;
+      }
+      .previews h1 {
+          margin: 0px;
+      }
+      .previews p {
+          padding: 10px 0px;
+          flex: 1;
+          margin: 0;       /* Remove default margins, adjust as you prefer */
+          font-size: 1.2rem; /* Adjust text size to taste */
+          line-height: 1.4;
+      }
+      .previews .preview-video p {
+          font-family: 'Exo 2', sans-serif;
+          font-size: 1rem; /* Adjust text size to taste */
+      }
+      /* Responsive: collapse to a single column on smaller screens */
+      @media (max-width: 1000px) {
+          .video-grid {
+              grid-template-columns: 1fr; /* Switch to just 1 column */
+          }
+
+          .preview-video {
+          }
+
+          .preview-video p {
+          }
+      }
+      @media (max-width: 500px) {
+          .preview-video {
+              flex-direction: column;
+          }
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .profile img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 120px;
+        height: 120px;
+      }
+
+      .profile p {
+          font-size: 1.2rem;
+      }
+      @media (max-width: 500px) {
+          .artists { text-align: center; }
+          .profile {
+              flex-direction: column;
+              padding-top: 2rem;
+          }
+          .profile p {
+              font-size: 1rem;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-image">
+      <!-- <img src="NangqenTsenpo.png" alt="Header Image"> -->
+      <div class="header-text">
+          <h1>Conquering the Suffering</h1>
+          <h2>An Exploration of Himalayan Sound and Light</h2>
+          <div class="header-button" onclick="location.href='#description'">Explore</div>
+      </div>
+    </div>
+    <div id="description" class="section description red">
+        <h1>Conquer the Suffering: A Mixed-Reality Himalayan Soundscape</h1>
+        <p>
+            We are pleased to present <i>Conquer the Suffering</i> as a collaboration
+            between Dr. Cecilia Wu and Daniel Schreck for consideration
+            under the <i>Rubin x Art Projects</i> Grant Program. This project will
+            synthesize Dr. Wu’s immersive soundscapes—grounded in Nepalese and
+            Tibetan Buddhist ritual instruments, spiritual chants, and modern electronic
+            composition—with Daniel’s immersive virtual-reality environments designed to
+            capture Himalayan wisdom transmission for cross-platform spatial computing
+            systems (with Unity, OpenXR, and RealityKit).
+        </p>
+        <p>
+            The project harnesses real-time Ambisonics audio to inspire immersive virtual-reality environments referencing Himalayan aesthetics and wisdom traditions. Whether manifested as mandala-like forms, subtle mountain vistas, or shifting gradients of light, each immersive environment developed for "Conquer the Suffering" will respond in tandem with the evolving music. This fusion will highlight themes of resilience and introspection within an artistic framework developed to harness modern technologies to support Himalayan wisdom traditions.
+        </p>
+        <p>
+            <i>Conquer the Suffering</i> emerges as a project that interweaves
+            form along
+            the axes of sonic and
+            visual space, and that synthesizes traditional Himalayan contemplative
+            practices with cutting-edge technology for experiential immersion. We believe
+            this synergy aligns with the Rubin Museum’s dedication to preserving,
+            celebrating, and transmitting Himalayan wisdom-culture in the modern
+            age.        </p>
+    </div>
+    <div class="section technology green">
+        <h1>Technologies</h1>
+        <div class="technologies-container">
+            <div class="technology-item">
+              <img src="ambisonics.svg" class="ambisonics-svg" style="width:130px;
+              height:130px; padding-top: 15px; object-fit: contain;" alt="ambisonics">
+              <h3>Ambisonics</h3>
+              <p>Ambisonics encodes a full 360-degree soundfield, capturing audio from every direction and maintaining spatial accuracy as the listener moves. This format integrates diverse inputs—vocals, instruments, and electronic elements—into a seamless sonic sphere. When synced with VR visuals, it heightens immersion and realism, allowing participants to experience nuanced shifts in perspective for a deeply meditative encounter.</p>
+            </div>
+            <div class="technology-item">
+            <!-- <a href="https://iconscout.com/icons/3-d-cube" class="text-underline font-size-sm" target="_blank">3 D Cube</a> by <a href="https://iconscout.com/contributors/maghsoudisadjad" class="text-underline font-size-sm" target="_blank">Sadjad</a> -->
+              <img src="3-d-cube.svg" style="width:150px; height:150px;" alt="Icon 2">
+              <h3>Unity</h3>
+              <p>Unity is a leading development platform for creating immersive graphical experiences that can be deployed across diverse headsets, including Oculus and Apple Vision Pro. Its flexible design tools, real-time rendering, and integrated VR libraries empower artists to craft dynamic virtual worlds, embedding interactive elements and rich lighting. This cross-platform reach ensures broad accessibility for transformative, visually engaging installations.</p>
+            </div>
+            <div class="technology-item">
+              <img src="vr-headset.svg" style="width:150px; height:150px;" alt="Icon 3">
+              <h3>Virtual Reality</h3>
+              <p>Virtual reality environments will support the presentation immersive experiences that respond dynamically
+                  to the composition’s soundscapes. By offering environments that are
+                  platform-agnostic and can run on headsets of the user's choice,
+                  <i>Conquer the
+                      Suffering</i> aims to transmit Himalayan wisdom culture through a
+                  multi-sensory journey that immerses the viewer into experiential
+                  landscapes of light and contemplation. The cross-platform reach
+                  of these environments supports broad accessibility to these wisdom
+                  spaces for years to come.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section previews yellow">
+      <h1>Potential Directions</h1>
+      <p> We include the following set of potential environments to indicate the possible
+          directions of artistic development. We envision <i>Conquer the Suffering</i> as
+          a synthesis of several immersive virtual-reality environments with interwoven
+          displays of light and sound.
+      <div class="video-grid">
+        <div class="preview-video">
+          <video width="350" height="220" controls>
+            <source src="tibetan_monastery.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <p>
+              A sunlit <b>Tibetan plateau</b> with rolling grasslands, white-walled monasteries, and fluttering prayer flags.
+          </p>
+        </div>
+        <div class="preview-video">
+          <video width="350" height="220" controls>
+            <source src="sakyamuni_fractal.mp4" type="video/mp4" />
+          </video>
+          <p>
+              <b>Shakyamuni Buddha</b> glows with golden light, as shifting fractal patterns radiate from his luminous form.
+          </p>
+        </div>
+        <div class="preview-video">
+          <video width="350" height="220" controls>
+            <source src="8auspicious.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <p>
+              Potential lines of development include environments that support interactivity with each of the <b>Eight Auspicious Symbols</b>.
+          </p>
+        </div>
+        <div class="preview-video">
+          <video width="350" height="220" controls>
+            <source src="1000arm.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <p>
+              VR environments offer a space to view<span>&#8212;</span>and, eventually, interact with<span>&#8212;</span><i>yidams</i> (meditational dieties), such as <b>1000-armed Avalokiteśvara</b>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section artists blue">
+      <h1>Contributors</h1>
+      <div class="profile">
+        <img src="cwu.jpg" alt="Cecilia Wu">
+        <div>
+          <h3>Dr. Jiayue Cecilia Wu</h3>
+          <p>Originally from Beijing, Dr. Jiayue Cecilia Wu (AKA: 武小慈) is a scholar, educator, musician, audio engineer, and technologist focusing on how music technology enhances the healing power of music. She worked as a professional musician, producer, and publishing manager at EMI Records and Universal Music Group for 10 years before she joined academia. She holds a B.S. in Design & Engineering, an M.A. in Music, Science, & Technology from Stanford University, and a Ph.D. in Media Arts &Technology from UCSB.</p>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="dschreck.jpg" alt="Daniel Schreck">
+        <div>
+          <h3>Daniel Schreck</h3>
+          <p>Daniel Schreck is a M.S. candidate in the Computer Science department of
+              Stanford University. Originally from New York City, he completed his Sc.B. in Neuroscience at Brown University, where he
+              studied retinal neurobiology and visual processing in the Berson Lab and
+              the neural correlates of meditative experience in the CLAN-Lab. Today, he's
+              most interested in developing virtual reality environments for meditation.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+
