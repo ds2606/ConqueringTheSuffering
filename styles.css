@@ -29,7 +29,7 @@ p {
 .green { background-color: #013d10; }
 .yellow { background-color: #f0ab26; }
 .blue { background-color: #14247b; }
-.white { background-color: #f2f3f4; }
+.white { background-color: #f2f3f4; color: #2d2877fc; }
 
 .header-image {
     height: 100vh;
