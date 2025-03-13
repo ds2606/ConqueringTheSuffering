@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: auto;
+}
+h1, h3 {
+    font-family: 'Exo 2', sans-serif;
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.section {
+    padding: 60px;
+    color: #fff;
+}
+@media (max-width: 640px) {
+    .section {
+        padding: 30px;
+    }
+}
+
+.red { background-color: #e74c3c; }
+.green { background-color: #27ae60; }
+.yellow { background-color: #f1c40f; }
+.blue { background-color: #3498db; }
+
+.header-image {
+    height: 100vh;
+    background: url('NangqenTsenpo.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Exo 2";
+    color: white;
+}
+.header-image h2 {
+    font-family: 'Cormorant Garamond';
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.header-text {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    padding: 3rem;
+}
+.header-button {
+    margin: 2rem;
+    width: 80px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff11;
+    transition: 0.2s ease;
+    user-select: none;
+}
+.header-button:hover {
+    background-color: #ffffff44;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .header-image h2 {
+        padding-bottom: 0rem;
+    }
+}
+
+.description p {
+    font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+    .description p { font-size: 1.15rem; }
+}
+
+.technologies-container {
+    display: flex;             /* Place items in a horizontal row by default */
+    justify-content: space-around;
+    align-items: stretch;
+}
+@media (max-width: 1000px) {
+    .technologies-container {
+        flex-direction: column;
+        align-items: center;      /* Center items when stacked vertically */
+    }
+}
+.technology-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+.technology-item img {
+    max-width: 100%;
+    height: auto;
+}
+.technology-item img {
+    filter: invert(100%);
+    object-fit: cover;
+}
+.technology h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.technology p {
+    font-size: 1.1rem;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns, 2 rows by default */
+    gap: 2rem;                      /* Spacing between blocks */
+    max-width: 1200px;             /* Optional: limit total width */
+    margin: 2rem auto;             /* Center the grid and add top/bottom spacing */
+    padding: 0 1rem;               /* Small horizontal padding */
+}
+.preview-video {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-right: 40px;
+}
+.previews h1 {
+    margin: 0px;
+}
+.previews p {
+    padding: 10px 0px;
+    flex: 1;
+    margin: 0;       /* Remove default margins, adjust as you prefer */
+    font-size: 1.2rem; /* Adjust text size to taste */
+    line-height: 1.4;
+}
+.previews .preview-video p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem; /* Adjust text size to taste */
+}
+/* Responsive: collapse to a single column on smaller screens */
+@media (max-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* Switch to just 1 column */
+    }
+
+    .preview-video {
+    }
+
+    .preview-video p {
+    }
+}
+@media (max-width: 500px) {
+    .preview-video {
+        flex-direction: column;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.profile p {
+    font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+    .artists { text-align: center; }
+    .profile {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .profile p {
+        font-size: 1rem;
+    }
+}
