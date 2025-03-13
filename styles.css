@@ -33,7 +33,7 @@ p {
 
 .header-image {
     height: 100vh;
-    background: url('NangqenTsenpo.png') no-repeat center center;
+    background: url('assets/NangqenTsenpo.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
