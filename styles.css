@@ -14,6 +14,9 @@ h1, h3 {
 p {
     font-family: 'Cormorant Garamond', serif;
 }
+a {
+    color: #5a68a9;
+}
 
 .section {
     padding: 60px;
@@ -27,7 +30,7 @@ p {
 
 .red { background-color: #ac150c; }
 .green { background-color: #013d10; }
-.yellow { background-color: #f0ab26; }
+.yellow { background-color: #e5a529; }
 .blue { background-color: #14247b; }
 .white { background-color: #f2f3f4; color: #2d2877fc; }
 
