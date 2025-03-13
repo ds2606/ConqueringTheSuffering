@@ -25,10 +25,11 @@ p {
     }
 }
 
-.red { background-color: #e74c3c; }
-.green { background-color: #27ae60; }
-.yellow { background-color: #f1c40f; }
-.blue { background-color: #3498db; }
+.red { background-color: #ac150c; }
+.green { background-color: #013d10; }
+.yellow { background-color: #f0ab26; }
+.blue { background-color: #14247b; }
+.white { background-color: #f2f3f4; }
 
 .header-image {
     height: 100vh;
